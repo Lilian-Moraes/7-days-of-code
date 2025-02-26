@@ -1,8 +1,12 @@
 function enviarDados() {
-  // ... (código para obter nome, idade e linguagem) ...
-  let gosta = parseInt(document.getElementById("gosta").value);
+  let nome = document.getElementById("nome").value;
+  let idade = parseInt(document.getElementById("idade").value);
   let linguagem = document.getElementById("linguagem").value;
+  let gosta = parseInt(document.getElementById("gosta").value);
   let resultado = document.getElementById("resultado");
+  let linguagemDisplay = document.getElementById("linguagem-display");
+
+  linguagemDisplay.textContent = linguagem; // Atualiza o texto da pergunta
 
   if (isNaN(idade) || idade <= 0) {
     resultado.innerHTML = "Idade inválida. Por favor, insira um número inteiro positivo.";
