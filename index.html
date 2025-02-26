@@ -8,12 +8,12 @@
 <h1>Informe suas informações</h1>
 
 <form id="meuFormulario">
-  <label for="nome">Nome:</label><br>
-  <input type="text" id="nome" name="nome"><br>
-  <label for="idade">Idade:</label><br>
-  <input type="number" id="idade" name="idade" min="0"><br>
-  <label for="linguagem">Linguagem de Programação:</label><br>
-  <input type="text" id="linguagem" name="linguagem"><br><br>
+  <!-- ... (perguntas anteriores) ... -->
+  <label for="gosta">Você gosta de estudar [linguagem]? </label><br>
+  <select id="gosta" name="gosta">
+      <option value="1">SIM</option>
+      <option value="2">NÃO</option>
+  </select><br><br>
   <input type="button" value="Enviar" onclick="enviarDados()">
 </form>
 
