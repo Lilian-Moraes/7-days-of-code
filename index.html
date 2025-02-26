@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulário de Informações</title>
+</head>
+<body>
+
+<h1>Informe suas informações</h1>
+
+<form id="meuFormulario">
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome"><br>
+  <label for="idade">Idade:</label><br>
+  <input type="number" id="idade" name="idade" min="0"><br>
+  <label for="linguagem">Linguagem de Programação:</label><br>
+  <input type="text" id="linguagem" name="linguagem"><br><br>
+  <input type="button" value="Enviar" onclick="enviarDados()">
+</form>
+
+<div id="resultado"></div>
+
+<script src="script.js"></script> </body>
+</html>
